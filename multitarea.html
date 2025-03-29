@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Multitarea en Linux</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="multitarea.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Linux World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#introduccion">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#caracteristicas">Características</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#distribuciones">Distribuciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="text-white text-center d-flex align-items-center justify-content-center"
+            style="height: 400px; background-image: url('imagenes/multitarea.webp'); background-size: cover; background-position: center;">
+        <div style="background-color: rgba(0, 0, 0, 0.4); padding: 1rem 2rem; border-radius: 8px;">
+            <h1 class="display-5 fw-semibold text-shadow mb-0">
+                <i class="bi bi-cpu me-2"></i>
+                Multitarea en Linux
+            </h1>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <div class="container my-5 bg-light rounded p-4">
+        <section class="bg-white p-4 rounded shadow-sm mb-4">
+            <h2>¿Qué es la multitarea?</h2>
+            <div class="text-end mb-3"><i class="bi bi-layers display-4 text-primary"></i></div>
+            <p>La multitarea es cuando un sistema puede hacer varias cosas a la vez. Linux usa un sistema que reparte el tiempo entre tareas, como si estuviera cambiando muy rápido de una a otra, para que parezca que todas se hacen al mismo tiempo.</p>
+            <p>Linux puede detener una tarea por un momento para que otra se ejecute, y luego continuar. Así trabaja de forma rápida y ordenada sin que se trabe.</p>
+        </section>
+
+        <section class="bg-white p-4 rounded shadow-sm mb-4">
+            <h2>Tipos de multitarea</h2>
+            <div class="text-start mb-3"><i class="bi bi-diagram-3 display-4 text-success"></i></div>
+            <ul>
+                <li><strong>Multitarea cooperativa:</strong> Los programas se pasan el control entre ellos. Es más antigua y menos segura.</li>
+                <li><strong>Multitarea preventiva:</strong> El sistema decide quién trabaja y cuándo. Es más segura y moderna. Así funciona Linux.</li>
+            </ul>
+        </section>
+
+        <section class="bg-white p-4 rounded shadow-sm mb-4">
+            <h2>Procesos y subprocesos</h2>
+            <div class="text-end mb-3"><i class="bi bi-diagram-2 display-4 text-danger"></i></div>
+            <p>Un proceso es un programa que se está ejecutando. Un subproceso (o hilo) es como una tarea pequeña dentro de ese programa.</p>
+            <p>Linux puede usar varios subprocesos para hacer cosas al mismo tiempo dentro del mismo programa, y así trabaja más rápido.</p>
+        </section>
+
+        <section class="bg-white p-4 rounded shadow-sm mb-4">
+            <h2>Herramientas para monitorear multitarea</h2>
+            <div class="text-start mb-3"><i class="bi bi-terminal display-4 text-warning"></i></div>
+            <ul>
+                <li><code>top</code> y <code>htop</code>: Muestran los procesos que están corriendo y cuánta memoria o CPU usan.</li>
+                <li><code>ps</code>: Muestra la lista de procesos activos.</li>
+                <li><code>nice</code> y <code>renice</code>: Permiten cambiar qué tan importante es un proceso para el sistema.</li>
+            </ul>
+        </section>
+
+        <section class="bg-white p-4 rounded shadow-sm mb-4">
+            <h2>Explora: Comportamiento de la multitarea</h2>
+            <div class="accordion" id="accordionMulti">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="multiOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMulti1" aria-expanded="true" aria-controls="collapseMulti1">
+                            ¿Qué sucede cuando se saturan los procesos?
+                        </button>
+                    </h2>
+                    <div id="collapseMulti1" class="accordion-collapse collapse show" aria-labelledby="multiOne" data-bs-parent="#accordionMulti">
+                        <div class="accordion-body">
+                            El sistema pone pausa a tareas menos importantes y da prioridad a las que necesita más atención.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="multiTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMulti2" aria-expanded="false" aria-controls="collapseMulti2">
+                            ¿Puedo limitar la CPU a ciertos procesos?
+                        </button>
+                    </h2>
+                    <div id="collapseMulti2" class="accordion-collapse collapse" aria-labelledby="multiTwo" data-bs-parent="#accordionMulti">
+                        <div class="accordion-body">
+                            Sí. Puedes hacer que algunos procesos usen menos CPU con comandos como <code>nice</code> o <code>cpulimit</code>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white p-4 rounded shadow-sm mb-4">
+            <h2>Curiosidades sobre la multitarea en Linux</h2>
+            <ul>
+                <li>Linux puede ejecutar cientos de procesos al mismo tiempo.</li>
+                <li>El sistema usa “colas” para decidir cuál tarea se ejecuta primero.</li>
+                <li>Android, que también está basado en Linux, usa multitarea preventiva.</li>
+                <li>El kernel de Linux ha mejorado mucho su rendimiento en multitarea en los últimos años.</li>
+            </ul>
+        </section>
+
+        <section class="bg-white p-4 rounded shadow-sm mb-4">
+            <h2>¿Cómo maneja Linux los procesos en segundo plano?</h2>
+            <div class="text-end mb-3"><i class="bi bi-arrow-repeat display-4 text-info"></i></div>
+            <p>Linux permite ejecutar tareas en segundo plano usando el símbolo <code>&</code> al final de un comando. Por ejemplo: <code>firefox &</code>. Esto libera la terminal para otras tareas mientras el programa sigue corriendo.</p>
+            <p>Además, comandos como <code>jobs</code>, <code>bg</code>, <code>fg</code> y <code>kill</code> permiten administrar fácilmente estos procesos sin cerrar la terminal.</p>
+        </section>
+
+        <section class="bg-white p-4 rounded shadow-sm mb-4">
+            <h2>Ventajas de la multitarea en Linux</h2>
+            <div class="text-start mb-3"><i class="bi bi-check-circle display-4 text-success"></i></div>
+            <ul>
+                <li>Mejor rendimiento: el sistema reparte los recursos según la necesidad de cada tarea.</li>
+                <li>Mayor estabilidad: evita que un solo programa bloquee todo el sistema.</li>
+                <li>Flexibilidad: puedes ejecutar programas en segundo plano, programar tareas, y más.</li>
+                <li>Ahorro de tiempo: se pueden realizar muchas tareas a la vez sin interrupciones.</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Linux World - Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

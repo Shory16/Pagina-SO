@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comandos básicos del sistema operativo Linux">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Tu hoja de estilos -->
+    <link rel="stylesheet" href="comandos.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Linux World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#introduccion">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#caracteristicas">Características</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#distribuciones">Distribuciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado principal -->
+    <header class="text-white text-center d-flex align-items-center justify-content-center"
+            style="height: 400px; background-image: url('imagenes/comandos.webp'); background-size: cover; background-position: center;">
+        <div style="background-color: rgba(0, 0, 0, 0.5); padding: 1rem 2rem; border-radius: 8px;">
+            <h1 class="display-5 fw-medium text-shadow mb-0">
+                <i class="bi bi-terminal-fill float-end ms-2 mb-2 icon-lg"></i>
+                Comandos Básicos del Sistema Operativo Linux
+            </h1>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <div class="container my-5 bg-body-tertiary rounded p-4">
+        <!-- Navegación y Gestión de Directorios -->
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section>
+                <h2><i class="bi bi-folder-fill me-2"></i>Navegación y Gestión de Directorios</h2>
+                <ul>
+                    <li><strong>pwd:</strong> Muestra el directorio actual.</li>
+                    <li><strong>cd:</strong> Cambia el directorio actual.</li>
+                    <li><strong>ls:</strong> Lista archivos y directorios.</li>
+                    <li><strong>mkdir:</strong> Crea un nuevo directorio.</li>
+                    <li><strong>rmdir:</strong> Elimina directorios vacíos.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Gestión de Archivos -->
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section>
+                <h2><i class="bi bi-file-earmark-text-fill me-2"></i>Gestión de Archivos</h2>
+                <ul>
+                    <li><strong>touch:</strong> Crea un archivo vacío o actualiza su fecha.</li>
+                    <li><strong>cp:</strong> Copia archivos o directorios.</li>
+                    <li><strong>mv:</strong> Mueve o renombra archivos y directorios.</li>
+                    <li><strong>rm:</strong> Elimina archivos.</li>
+                    <li><strong>cat:</strong> Muestra contenido de archivos.</li>
+                    <li><strong>nano:</strong> Editor de texto simple.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Administración del Sistema -->
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section>
+                <h2><i class="bi bi-gear-fill me-2"></i>Administración del Sistema</h2>
+                <ul>
+                    <li><strong>sudo:</strong> Ejecuta comandos con privilegios administrativos.</li>
+                    <li><strong>apt-get:</strong> Gestión de paquetes (Debian).</li>
+                    <li><strong>yum:</strong> Gestión de paquetes (RHEL).</li>
+                    <li><strong>df:</strong> Muestra espacio disponible en disco.</li>
+                    <li><strong>du:</strong> Muestra espacio usado por archivos y carpetas.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Comandos Útiles Generales -->
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section>
+                <h2><i class="bi bi-tools me-2"></i>Comandos Útiles Generales</h2>
+                <ul>
+                    <li><strong>echo:</strong> Imprime texto en pantalla.</li>
+                    <li><strong>clear:</strong> Limpia la pantalla del terminal.</li>
+                    <li><strong>man:</strong> Muestra manual de comandos.</li>
+                    <li><strong>history:</strong> Muestra historial de comandos ejecutados.</li>
+                    <li><strong>exit:</strong> Cierra la terminal.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Gestión de Usuarios y Permisos -->
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section>
+                <h2><i class="bi bi-people-fill me-2"></i>Gestión de Usuarios y Permisos</h2>
+                <ul>
+                    <li><strong>useradd:</strong> Crea un nuevo usuario.</li>
+                    <li><strong>passwd:</strong> Cambia la contraseña de usuario.</li>
+                    <li><strong>usermod:</strong> Modifica las propiedades del usuario.</li>
+                    <li><strong>chown:</strong> Cambia el propietario de archivos y directorios.</li>
+                    <li><strong>chmod:</strong> Cambia los permisos de archivos y directorios.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Redes y Comunicación -->
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section>
+                <h2><i class="bi bi-wifi me-2"></i>Redes y Comunicación</h2>
+                <ul>
+                    <li><strong>ifconfig/ip:</strong> Configura o muestra información de interfaces de red.</li>
+                    <li><strong>ping:</strong> Comprueba la conectividad con otra máquina en la red.</li>
+                    <li><strong>wget:</strong> Descarga archivos desde Internet.</li>
+                    <li><strong>ssh:</strong> Realiza conexiones remotas seguras.</li>
+                    <li><strong>scp:</strong> Copia archivos entre máquinas de manera segura.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Monitoreo y Diagnóstico -->
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section>
+                <h2><i class="bi bi-speedometer2 me-2"></i>Monitoreo y Diagnóstico</h2>
+                <ul>
+                    <li><strong>top/htop:</strong> Monitoriza procesos y recursos del sistema en tiempo real.</li>
+                    <li><strong>free:</strong> Muestra información sobre el uso de memoria RAM.</li>
+                    <li><strong>dmesg:</strong> Muestra mensajes del kernel para diagnóstico de problemas.</li>
+                    <li><strong>journalctl:</strong> Consulta logs del sistema.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Gestión de Paquetes y Actualizaciones -->
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section>
+                <h2><i class="bi bi-arrow-repeat me-2"></i>Gestión de Paquetes y Actualizaciones</h2>
+                <ul>
+                    <li><strong>apt update / yum update:</strong> Actualiza lista de paquetes disponibles.</li>
+                    <li><strong>apt upgrade / yum upgrade:</strong> Actualiza los paquetes instalados.</li>
+                    <li><strong>apt-cache search / dnf search:</strong> Busca paquetes disponibles.</li>
+                    <li><strong>dpkg / rpm:</strong> Gestiona directamente paquetes individuales.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Archivos y Compresión -->
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section>
+                <h2><i class="bi bi-file-zip-fill me-2"></i>Archivos y Compresión</h2>
+                <ul>
+                    <li><strong>tar:</strong> Crea o extrae archivos comprimidos.</li>
+                    <li><strong>gzip / gunzip:</strong> Comprime o descomprime archivos.</li>
+                    <li><strong>bzip2 / bunzip2:</strong> Compresión más eficiente.</li>
+                    <li><strong>zip / unzip:</strong> Manejo archivos comprimidos en formato ZIP.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Edición Avanzada de Texto -->
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section>
+                <h2><i class="bi bi-pencil-square me-2"></i>Edición Avanzada de Texto</h2>
+                <ul>
+                    <li><strong>vim:</strong> Editor de texto avanzado en terminal.</li>
+                    <li><strong>emacs:</strong> Editor de texto altamente personalizable.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Procesos y Tareas en Segundo Plano -->
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section>
+                <h2><i class="bi bi-layers-fill me-2"></i>Procesos y Tareas en Segundo Plano</h2>
+                <ul>
+                    <li><strong>ps:</strong> Muestra procesos en ejecución.</li>
+                    <li><strong>kill / killall:</strong> Finaliza procesos específicos.</li>
+                    <li><strong>bg / fg:</strong> Controla ejecución de procesos en segundo plano.</li>
+                    <li><strong>nohup:</strong> Ejecuta comandos inmunes al cierre del terminal.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Dispositivos y Montaje -->
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section>
+                <h2><i class="bi bi-hdd-fill me-2"></i>Dispositivos y Montaje</h2>
+                <ul>
+                    <li><strong>mount / umount:</strong> Monta o desmonta dispositivos de almacenamiento.</li>
+                    <li><strong>lsblk:</strong> Lista dispositivos de almacenamiento disponibles.</li>
+                    <li><strong>fdisk:</strong> Gestiona particiones de disco.</li>
+                    <li><strong>blkid:</strong> Muestra información de dispositivos.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Seguridad y Firewall -->
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section>
+                <h2><i class="bi bi-shield-lock-fill me-2"></i>Seguridad y Firewall</h2>
+                <ul>
+                    <li><strong>ufw:</strong> Configuración sencilla de firewall.</li>
+                    <li><strong>iptables:</strong> Configura reglas avanzadas del firewall.</li>
+                    <li><strong>fail2ban:</strong> Protección contra intentos repetitivos de acceso.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Respaldos y Sincronización -->
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section>
+                <h2><i class="bi bi-cloud-upload-fill me-2"></i>Respaldos y Sincronización</h2>
+                <ul>
+                    <li><strong>rsync:</strong> Sincroniza archivos y directorios localmente o remotos.</li>
+                    <li><strong>scp:</strong> Copia segura de archivos remotos.</li>
+                    <li><strong>dd:</strong> Realiza copias exactas de discos o particiones.</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Linux World - Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

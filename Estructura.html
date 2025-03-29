@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estructura del sistema operativo Linux">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Tu hoja de estilos -->
+    <link rel="stylesheet" href="Estructura.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Linux World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#introduccion">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#caracteristicas">Características</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#distribuciones">Distribuciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado principal -->
+    <header class="text-white text-center d-flex align-items-center justify-content-center"
+            style="height: 400px; background-image: url('imagenes/linux.jpeg'); background-size: cover; background-position: center;">
+        <div style="background-color: rgba(0, 0, 0, 0.5); padding: 1rem 2rem; border-radius: 8px;">
+            <h1 class="display-5 fw-medium text-shadow mb-0">
+                <i class="bi bi-shield-lock-fill float-end ms-2 mb-2 icon-lg"></i>
+                Estructura del Sistema Operativo Linux
+            </h1>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <div class="container my-5 bg-body-tertiary rounded p-4">
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section class="mb-5">
+                <h2><i class="bi bi-cpu-fill me-2"></i> Núcleo (Kernel)</h2>
+                <p>El núcleo es la pieza central de Linux, actuando como intermediario entre el hardware y el software. Su principal función es gestionar los recursos del sistema y permitir la comunicación entre el hardware y las aplicaciones.</p>
+                <h5 class="mt-3">Funciones del Núcleo:</h5>
+                <ul>
+                    <li><strong>Gestión de procesos:</strong> El kernel gestiona la ejecución de los procesos, asegurando que cada uno reciba el tiempo de CPU necesario y evitando conflictos entre ellos.</li>
+                    <li><strong>Gestión de memoria:</strong> Controla cómo se asigna y libera la memoria para las aplicaciones y procesos en ejecución.</li>
+                    <li><strong>Gestión de dispositivos:</strong> Se encarga de la comunicación con los dispositivos de hardware, utilizando controladores para interactuar con ellos.</li>
+                </ul>
+                <h5 class="mt-3">Tipos de Kernel:</h5>
+                <ul>
+                    <li><strong>Monolítico:</strong> Todos los servicios en un solo bloque, lo que permite una comunicación rápida entre ellos.</li>
+                    <li><strong>Modular:</strong> Permite cargar o descargar funcionalidades del kernel según sea necesario, lo que mejora la flexibilidad y la eficiencia.</li>
+                </ul>
+            </section>
+        </div>
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section class="mb-5">
+                <h2><i class="bi bi-folder2-open me-2"></i> Sistema de Archivos</h2>
+                <p>El sistema de archivos organiza y gestiona los datos en el almacenamiento, permitiendo a los usuarios y aplicaciones acceder a la información de manera eficiente. En Linux, existen diferentes tipos de sistemas de archivos, cada uno con sus características y ventajas.</p>
+                <h5 class="mt-3">Tipos de Sistemas de Archivos:</h5>
+                <ul>
+                    <li><strong>Ext4:</strong> Uno de los sistemas de archivos más utilizados en Linux, conocido por su estabilidad y rendimiento.</li>
+                    <li><strong>Btrfs:</strong> Un sistema de archivos moderno que ofrece características avanzadas como instantáneas y gestión de volúmenes.</li>
+                    <li><strong>XFS:</strong> Diseñado para manejar grandes volúmenes de datos, ideal para servidores y aplicaciones de alto rendimiento.</li>
+                </ul>
+            </section>
+        </div>
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section class="mb-5">
+                <h2><i class="bi bi-terminal me-2"></i> Shell</h2>
+                <p>La shell es la interfaz de línea de comandos que permite interactuar con el sistema operativo. A través de la shell, los usuarios pueden ejecutar comandos, scripts y programas, facilitando tareas administrativas y de desarrollo.</p>
+                <h5 class="mt-3">Tipos de Shell:</h5>
+                <ul>
+                    <li><strong>Bash:</strong> La shell más popular en Linux, conocida por su facilidad de uso y potentes características.</li>
+                    <li><strong>Zsh:</strong> Ofrece características avanzadas como autocompletado y temas personalizables.</li>
+                    <li><strong>Fish:</strong> Una shell amigable para el usuario, con sintaxis simplificada y sugerencias de comandos en tiempo real.</li>
+                </ul>
+            </section>
+        </div>
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section class="mb-5">
+                <h2><i class="bi bi-gear me-2"></i> Gestor de procesos</h2>
+                <p>El gestor de procesos se encarga de la creación, planificación y terminación de procesos en el sistema. Es fundamental para garantizar que los recursos del sistema se utilicen de manera eficiente y que los procesos se ejecuten sin conflictos.</p>
+                <h5 class="mt-3">Funciones del Gestor de Procesos:</h5>
+                <ul>
+                    <li><strong>Creación de procesos:</strong> Inicia nuevos procesos y asigna recursos necesarios.</li>
+                    <li><strong>Planificación:</strong> Determina el orden en que se ejecutan los procesos, optimizando el uso de la CPU.</li>
+                    <li><strong>Terminación:</strong> Finaliza procesos que han completado su tarea o que han sido interrumpidos.</li>
+                </ul>
+            </section>
+        </div>
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section class="mb-5">
+                <h2><i class="bi bi-usb-symbol me-2"></i> Controladores de dispositivos</h2>
+                <p>Los controladores permiten que el sistema operativo se comunique con el hardware. Son esenciales para que el sistema reconozca y utilice dispositivos como impresoras, tarjetas gráficas y discos duros.</p>
+                <h5 class="mt-3">Tipos de Controladores:</h5>
+                <ul>
+                    <li><strong>Controladores en modo kernel:</strong> Se ejecutan en el espacio de kernel, ofreciendo un acceso directo al hardware.</li>
+                    <li><strong>Controladores en modo usuario:</strong> Se ejecutan en el espacio de usuario, proporcionando una capa de abstracción entre el hardware y las aplicaciones.</li>
+                </ul>
+            </section>
+        </div>
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section class="mb-5">
+                <h2><i class="bi bi-play-circle me-2"></i> Servicios y Demonios</h2>
+                <p>Los servicios y demonios son programas que se ejecutan en segundo plano, realizando tareas específicas y proporcionando funcionalidades al sistema operativo y a las aplicaciones.</p>
+                <h5 class="mt-3">Ejemplos de Servicios:</h5>
+                <ul>
+                    <li><strong>sshd:</strong> Permite conexiones remotas seguras a través de SSH.</li>
+                    <li><strong>cron:</strong> Programa tareas programadas para que se ejecuten en momentos específicos.</li>
+                    <li><strong>httpd:</strong> Proporciona servicios web a través de un servidor HTTP.</li>
+                </ul>
+            </section>
+        </div>
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section class="mb-5">
+                <h2><i class="bi bi-display me-2"></i> Entornos de escritorio y GUI</h2>
+                <p>Los entornos de escritorio proporcionan una interfaz gráfica para interactuar con el sistema operativo. Facilitan a los usuarios realizar tareas de manera intuitiva y visual, en lugar de depender únicamente de la línea de comandos.</p>
+                <h5 class="mt-3">Ejemplos de Entornos de Escritorio:</h5>
+                <ul>
+                    <li><strong>GNOME:</strong> Un entorno de escritorio moderno y popular, conocido por su simplicidad y elegancia.</li>
+                    <li><strong>KDE Plasma:</strong> Ofrece un alto grado de personalización y una amplia gama de características.</li>
+                    <li><strong>Xfce:</strong> Un entorno ligero y rápido, ideal para sistemas con recursos limitados.</li>
+                </ul>
+            </section>
+        </div>
+        <div class="bg-light p-4 rounded shadow-sm mb-4">
+            <section class="mb-5">
+                <h2><i class="bi bi-person-badge me-2"></i> Gestión de usuarios y permisos</h2>
+                <p>La gestión de usuarios y permisos controla el acceso a los recursos del sistema, asegurando que solo los usuarios autorizados puedan realizar ciertas acciones. Es fundamental para la seguridad y la integridad del sistema.</p>
+                <h5 class="mt-3">Principales Conceptos:</h5>
+                <ul>
+                    <li><strong>Usuarios:</strong> Cada persona o entidad que tiene acceso al sistema.</li>
+                    <li><strong>Grupos:</strong> Conjuntos de usuarios que comparten permisos y recursos.</li>
+                    <li><strong>Permisos:</strong> Definen qué acciones pueden realizar los usuarios y grupos sobre archivos y directorios.</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Linux World - Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

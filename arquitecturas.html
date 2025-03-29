@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compatibilidad en Linux</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="arquitecturas.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Linux World</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html#introduccion">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#caracteristicas">Características</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#distribuciones">Distribuciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Compatibilidad en Linux</h1>
+  </header>
+
+  <!-- Contenido -->
+  <main class="container my-5">
+
+  <section>
+    <h2>¿Qué significa compatibilidad con múltiples arquitecturas?</h2>
+    <p>
+      Linux es reconocido mundialmente por su capacidad de ejecutarse en una gran variedad de arquitecturas de hardware. Desde computadoras personales y servidores empresariales hasta dispositivos embebidos, consolas de videojuegos y supercomputadoras, el núcleo de Linux ha sido desarrollado para adaptarse a distintos entornos. 
+    </p>
+    <p>
+      Esta flexibilidad no solo lo hace accesible, sino también ideal para proyectos que requieren eficiencia, portabilidad y escalabilidad. El hecho de que pueda funcionar en diferentes arquitecturas de procesador lo convierte en un sistema operativo altamente versátil y adaptable.
+    </p>
+    <i class="bi bi-cpu-fill"></i>
+  </section>
+
+  <section>
+    <h2>¿Qué es una arquitectura de procesador?</h2>
+    <p>
+      Una arquitectura de procesador define cómo se organiza internamente un CPU: su conjunto de instrucciones, registros, interfaces de entrada/salida y la forma en que maneja la memoria. Algunas arquitecturas son complejas y potentes (como x86_64), mientras que otras están diseñadas para bajo consumo (como ARM).
+    </p>
+    <p>
+      Linux ha sido adaptado para soportar muchas de estas arquitecturas gracias a su naturaleza de código abierto, permitiendo a la comunidad y empresas desarrollar versiones específicas del sistema para cada necesidad.
+    </p>
+    <i class="bi bi-gear-wide-connected"></i>
+  </section>
+
+  <section>
+    <h2>Principales arquitecturas compatibles con Linux</h2>
+    <ul>
+      <li><strong><i class="bi bi-laptop"></i> x86 / x86_64:</strong> Arquitecturas más comunes en computadoras personales y servidores tradicionales. Muy utilizadas por Intel y AMD.</li>
+      <li><strong><i class="bi bi-phone"></i> ARM:</strong> Presente en teléfonos móviles, tablets, Raspberry Pi, y también en servidores energéticamente eficientes.</li>
+      <li><strong><i class="bi bi-controller"></i> PowerPC:</strong> Arquitectura usada en antiguas computadoras Apple y aún activa en sistemas industriales y consolas como la PlayStation 3.</li>
+      <li><strong><i class="bi bi-cpu"></i> RISC-V:</strong> Nueva arquitectura abierta y libre que promete revolucionar la industria del hardware. Linux ya cuenta con soporte nativo.</li>
+      <li><strong><i class="bi bi-router-fill"></i> MIPS:</strong> Arquitectura empleada en routers, dispositivos de red y soluciones embebidas por su eficiencia.</li>
+    </ul>
+    <i class="bi bi-laptop"></i>
+  </section>
+
+  <section>
+    <h2>Ventajas de esta compatibilidad</h2>
+    <ul>
+      <li><i class="bi bi-arrows-expand"></i> <strong>Portabilidad:</strong> Permite ejecutar Linux en cualquier dispositivo, sin importar su arquitectura.</li>
+      <li><i class="bi bi-rocket-takeoff"></i> <strong>Escalabilidad:</strong> Desde microcontroladores hasta supercomputadoras, Linux puede escalar con facilidad.</li>
+      <li><i class="bi bi-boxes"></i> <strong>Optimización:</strong> Adaptación específica según el hardware para mejorar el rendimiento.</li>
+      <li><i class="bi bi-cash-coin"></i> <strong>Reducción de costos:</strong> Permite reutilizar hardware antiguo o aprovechar plataformas más económicas.</li>
+    </ul>
+    <i class="bi bi-arrows-expand"></i>
+  </section>
+
+  <section>
+    <h2>Casos de uso en el mundo real</h2>
+    <p>
+      - <strong>Android:</strong> Este sistema operativo móvil se basa en Linux y corre sobre arquitectura ARM en casi todos los teléfonos inteligentes.<br>
+      - <strong>Raspberry Pi:</strong> Dispositivo educativo y de proyectos que usa arquitectura ARM y corre distribuciones Linux como Raspbian.<br>
+      - <strong>Servidores web:</strong> La mayoría de los servidores web y de nube en el mundo corren distribuciones Linux sobre x86_64.<br>
+      - <strong>NASA y supercomputadoras:</strong> Muchas supercomputadoras y sistemas científicos corren con Linux debido a su flexibilidad y rendimiento.
+    </p>
+    <i class="bi bi-globe2"></i>
+  </section>
+
+<section>
+  <h2>Evolución del soporte a múltiples arquitecturas</h2>
+  <p>
+    Desde sus inicios en 1991, Linux fue diseñado para la arquitectura x86 de Intel. Sin embargo, gracias a su naturaleza de código abierto y la colaboración de miles de desarrolladores alrededor del mundo, rápidamente se comenzó a portar a otras arquitecturas como SPARC, Alpha y PowerPC.
+  </p>
+  <p>
+    Hoy en día, el kernel de Linux es uno de los más portables del mundo, compatible con más de 30 arquitecturas, algo que muy pocos sistemas operativos han logrado. Esto le ha dado a Linux la flexibilidad para ser el corazón de todo tipo de dispositivos, desde los más pequeños hasta los más potentes.
+  </p>
+  <i class="bi bi-clock-history"></i>
+</section>
+
+<section>
+  <h2>¿Cómo logra Linux esta compatibilidad?</h2>
+  <p>
+    Linux utiliza un sistema de compilación modular y flexible que permite generar versiones del kernel específicas para distintas arquitecturas. Gracias a herramientas como GCC (GNU Compiler Collection) y el uso de cross-compiling (compilación cruzada), se puede generar código binario compatible con plataformas diferentes a la que se desarrolla.
+  </p>
+  <p>
+    Además, existen distribuciones especializadas como Alpine, Arch ARM, Debian ARM, Fedora PowerPC, entre muchas otras que adaptan el sistema completo a una plataforma específica.
+  </p>
+  <i class="bi bi-tools"></i>
+</section>
+
+<section>
+  <h2>Ejemplos de hardware con Linux</h2>
+  <div class="row text-center">
+    <div class="col-md-3">
+      <i class="bi bi-phone display-4 mb-2"></i>
+      <p>Smartphones (Android)</p>
+    </div>
+    <div class="col-md-3">
+      <i class="bi bi-router display-4 mb-2"></i>
+      <p>Routers</p>
+    </div>
+    <div class="col-md-3">
+      <i class="bi bi-pc-display-horizontal display-4 mb-2"></i>
+      <p>PCs y Servidores</p>
+    </div>
+    <div class="col-md-3">
+      <i class="bi bi-cpu display-4 mb-2"></i>
+      <p>Raspberry Pi</p>
+    </div>
+  </div>
+</section>
+
+<section>
+    <h2>Conclusión</h2>
+    <p>
+      La compatibilidad de Linux con múltiples arquitecturas ha sido clave en su adopción global. Su naturaleza abierta ha permitido que se adapte a casi cualquier entorno, haciendo que sea el sistema operativo preferido para desarrolladores, investigadores y empresas alrededor del mundo.
+    </p>
+    <i class="bi bi-check-circle-fill"></i>
+  </section>
+
+</main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <p>&copy; 2025 Linux World - Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

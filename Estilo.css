@@ -1,0 +1,196 @@
+.hero {
+    background: url('imagenes/linux-2904136.webp') no-repeat center center;
+    background-size: cover;
+    height: 400px; /* Ajusta la altura según necesites */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.btn-hover {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-color: rgba(0, 123, 255, 0.2); /* Azul claro */
+    box-shadow: 0px 0px 15px rgba(0, 123, 255, 0.5); /* Brillo */
+    transform: scale(1.1); /* Efecto de zoom */
+}
+
+/* ====== ESTILOS ADICIONALES ====== */
+
+/* Títulos principales */
+h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Párrafos centrados */
+p {
+    font-size: 1.1rem;
+}
+
+/* Tarjetas de distribuciones */
+.distro-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.distro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Fondo general */
+body {
+    background-color: #ffffff;
+}
+
+/* Hero Section */
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* Imagen de integrantes en sección de contacto */
+#contacto img {
+    transition: transform 0.3s ease;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+#contacto img:hover {
+    transform: scale(1.1);
+    border-color: #0d6efd;
+}
+
+/* Estilos personalizados para el apartado de contacto */
+#contacto {
+    background-color: #ffffff;
+    color: #007f00; /* Verde oscuro */
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+#contacto h2,
+#contacto p,
+#contacto a,
+#contacto span {
+    color: #007f00;
+}
+
+/* Tarjetas de distribuciones populares */
+.distribuciones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.distro-card {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.distro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.distro-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    padding: 20px;
+    background-color: white;
+}
+
+.distro-card .card-body {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.distro-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.distro-card p {
+    flex-grow: 1;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.distro-card .btn-hover {
+    align-self: flex-start;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/* ====== CONCLUSIONES DEL EQUIPO ====== */
+#conclusiones {
+    background-color: #f5f9ff;
+    padding: 60px 20px;
+}
+
+#conclusiones h2 {
+    font-size: 2.4rem;
+    color: #1a1a1a;
+    margin-bottom: 40px;
+}
+
+#conclusiones .card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+    transition: transform 0.3s ease;
+}
+
+#conclusiones .card:hover {
+    transform: translateY(-5px);
+}
+
+#conclusiones .card img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #1bb23e;
+}
+
+#conclusiones .card h5 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #1bb23e;
+}
+
+#conclusiones .card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 15px;
+    text-align: justify;
+}

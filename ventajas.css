@@ -1,0 +1,59 @@
+
+
+/* Estilos generales para la página de ventajas y desventajas */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Encabezado principal hero */
+.hero {
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.icon-lg {
+    font-size: 3rem;
+}
+
+/* Estilos para las secciones */
+.container section {
+    background: #ffffff;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.container section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+}
+
+/* Estilos para títulos de sección */
+.container h2 {
+    color: #0056b3;
+    font-weight: 600;
+    border-left: 4px solid #0056b3;
+    padding-left: 10px;
+}
+
+/* Estilos para listas */
+.container ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.container ul li {
+    margin-bottom: 8px;
+}
+
+/* Estilos específicos para la conclusión */
+.container .bg-light:last-of-type {
+    border-left: 5px solid #28a745;
+}
+
+footer {
+    background-color: #212529;
+    color: #ffffff;
+    padding: 15px 0;
+}
